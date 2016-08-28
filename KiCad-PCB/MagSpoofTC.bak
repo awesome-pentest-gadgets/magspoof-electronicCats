@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:theinventorhouse
+LIBS:MagSpoofTC-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -50,7 +51,11 @@ P 4750 3300
 F 0 "IC1" H 3600 3700 40  0000 C CNN
 F 1 "ATTINY85-P" H 5750 2900 40  0000 C CNN
 F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 5750 3300 35  0001 C CIN
-F 3 "" H 4750 3300 60  0000 C CNN
+F 3 "http://www.farnell.com/datasheets/1744708.pdf" H 4750 3300 60  0001 C CNN
+F 4 "ATMEL" H 4750 3300 60  0001 C CNN "Manufacturer"
+F 5 "+85/-40" H 4750 3300 60  0001 C CNN "Temperatura"
+F 6 "5v" H 4750 3300 60  0001 C CNN "Alimentacion"
+F 7 "ATMEL 	ATTINY85-20PU  Microcontrolador 8 Bits, Baja Potencia, Alto Rendimiento, ATtiny, 20 MHz, 8 KB, 500 Byte, 8 Pines" H 4750 3300 60  0001 C CNN "Description"
 	1    4750 3300
 	-1   0    0    -1  
 $EndComp
@@ -62,6 +67,10 @@ F 0 "D1" H 6500 3950 50  0000 C CNN
 F 1 "LED" H 6500 3750 50  0000 C CNN
 F 2 "LEDs:LED-0805" H 6500 3850 60  0001 C CNN
 F 3 "" H 6500 3850 60  0000 C CNN
+F 4 "Maxim" H 6500 3850 60  0001 C CNN "Manufacturer"
+F 5 "+85/-40" H 6500 3850 60  0001 C CNN "Temperatura"
+F 6 "5v" H 6500 3850 60  0001 C CNN "Alimentacion"
+F 7 "Led red 0805" H 6500 3850 60  0001 C CNN "Description"
 	1    6500 3850
 	0    -1   -1   0   
 $EndComp
@@ -82,8 +91,11 @@ U 1 1 569ED2D4
 P 6500 4350
 F 0 "R1" V 6580 4350 50  0000 C CNN
 F 1 "330" V 6500 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 4350 30  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6430 4350 30  0001 C CNN
 F 3 "" H 6500 4350 30  0000 C CNN
+F 4 "+85/-40" H 6500 4350 60  0001 C CNN "Temperatura"
+F 5 "5v" H 6500 4350 60  0001 C CNN "Alimentacion"
+F 6 "Resistor 330ohms" H 6500 4350 60  0001 C CNN "Description"
 	1    6500 4350
 	1    0    0    -1  
 $EndComp
@@ -104,8 +116,12 @@ U 1 1 569EDA85
 P 8550 3700
 F 0 "C1" H 8575 3800 50  0000 L CNN
 F 1 "100uF" H 8575 3600 50  0000 L CNN
-F 2 "theinventorhouse:1411(3528m)-B%2CM%2CH%2CT-TANTALUM" H 8588 3550 30  0001 C CNN
-F 3 "" H 8550 3700 60  0000 C CNN
+F 2 "theinventorhouse:CP_5x5mm" H 8588 3550 30  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1923743.pdf" H 8550 3700 60  0001 C CNN
+F 4 "Kemet" H 8550 3700 60  0001 C CNN "Manufacturer"
+F 5 "+85/-40" H 8550 3700 60  0001 C CNN "Temperatura"
+F 6 "6.3v" H 8550 3700 60  0001 C CNN "Alimentacion"
+F 7 "KEMET 	T520T107M006ATE070  CAP, TANT, POLYMER, 100UF, 6.3V, 1411" H 8550 3700 60  0001 C CNN "Description"
 	1    8550 3700
 	1    0    0    -1  
 $EndComp
@@ -316,30 +332,17 @@ Wire Wire Line
 	3050 3350 3050 3550
 Connection ~ 3250 3550
 $Comp
-L CP C2
-U 1 1 569FD30B
-P 5350 4400
-F 0 "C2" H 5375 4500 50  0000 L CNN
-F 1 "100uF" H 5375 4300 50  0000 L CNN
-F 2 "theinventorhouse:1411(3528m)-B%2CM%2CH%2CT-TANTALUM" H 5388 4250 30  0001 C CNN
-F 3 "" H 5350 4400 60  0000 C CNN
-F 4 "Maxim" H 5350 4400 60  0001 C CNN "Manufacturer"
-F 5 "+85/-40" H 5350 4400 60  0001 C CNN "Temperatura"
-F 6 "5v" H 5350 4400 60  0001 C CNN "Alimentacion"
-	1    5350 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C3
 U 1 1 569FD413
 P 5650 4400
 F 0 "C3" H 5675 4500 50  0000 L CNN
 F 1 "0.1uF" H 5675 4300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5688 4250 30  0001 C CNN
-F 3 "" H 5650 4400 60  0000 C CNN
-F 4 "Maxim" H 5650 4400 60  0001 C CNN "Manufacturer"
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5688 4250 30  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2009679.pdf" H 5650 4400 60  0001 C CNN
+F 4 "WALSIN" H 5650 4400 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 5650 4400 60  0001 C CNN "Temperatura"
-F 6 "5v" H 5650 4400 60  0001 C CNN "Alimentacion"
+F 6 "50v" H 5650 4400 60  0001 C CNN "Alimentacion"
+F 7 "WALSIN 	0603F104Z500CT  CAP, MLCC, Y5V, 0.1UF, 50V, 0603, REEL" H 5650 4400 60  0001 C CNN "Description"
 	1    5650 4400
 	1    0    0    -1  
 $EndComp
@@ -391,7 +394,11 @@ P 7800 3200
 F 0 "U1" H 8050 2850 60  0000 C CNN
 F 1 "TC4424" H 7650 2850 60  0000 C CNN
 F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 7800 3200 60  0001 C CNN
-F 3 "" H 7800 3200 60  0000 C CNN
+F 3 "http://www.farnell.com/datasheets/95980.pdf" H 7800 3200 60  0001 C CNN
+F 4 "Microchip" H 7800 3200 60  0001 C CNN "Manufacturer"
+F 5 "+85/-40" H 7800 3200 60  0001 C CNN "Temperatura"
+F 6 "2.7-5v" H 7800 3200 60  0001 C CNN "Alimentacion"
+F 7 "MICROCHIP 	TC4424CPA  MOSFET Driver Lado Bajo, Alimentación:4.5-18V, Salida Pico:3A, Salida:3.5 Ohm, DIP-" H 7800 3200 60  0001 C CNN "Description"
 	1    7800 3200
 	1    0    0    -1  
 $EndComp
@@ -410,4 +417,19 @@ NoConn ~ 7300 2950
 Wire Wire Line
 	8300 3250 8550 3250
 Connection ~ 8550 3250
+$Comp
+L CP C2
+U 1 1 576EF8F9
+P 5350 4400
+F 0 "C2" H 5375 4500 50  0000 L CNN
+F 1 "100uF" H 5375 4300 50  0000 L CNN
+F 2 "theinventorhouse:CP_5x5mm" H 5388 4250 30  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1923743.pdf" H 5350 4400 60  0001 C CNN
+F 4 "Kemet" H 5350 4400 60  0001 C CNN "Manufacturer"
+F 5 "+85/-40" H 5350 4400 60  0001 C CNN "Temperatura"
+F 6 "6.3v" H 5350 4400 60  0001 C CNN "Alimentacion"
+F 7 "KEMET 	T520T107M006ATE070  CAP, TANT, POLYMER, 100UF, 6.3V, 1411" H 5350 4400 60  0001 C CNN "Description"
+	1    5350 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
