@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:MagSpoofTC-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:theinventorhouse
 LIBS:MagSpoofTC-cache
 EELAYER 25 0
 EELAYER END
@@ -55,12 +55,12 @@ F 3 "http://www.farnell.com/datasheets/1744708.pdf" H 4750 3300 60  0001 C CNN
 F 4 "ATMEL" H 4750 3300 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 4750 3300 60  0001 C CNN "Temperatura"
 F 6 "5v" H 4750 3300 60  0001 C CNN "Alimentacion"
-F 7 "ATMEL 	ATTINY85-20PU  Microcontrolador 8 Bits, Baja Potencia, Alto Rendimiento, ATtiny, 20 MHz, 8 KB, 500 Byte, 8 Pines" H 4750 3300 60  0001 C CNN "Description"
+F 7 "ATtiny85-20PU" H 4750 3300 60  0001 C CNN "manf#"
 	1    4750 3300
 	-1   0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-MagSpoofTC D1
 U 1 1 569ED258
 P 6500 3850
 F 0 "D1" H 6500 3950 50  0000 C CNN
@@ -70,7 +70,7 @@ F 3 "" H 6500 3850 60  0000 C CNN
 F 4 "Maxim" H 6500 3850 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 6500 3850 60  0001 C CNN "Temperatura"
 F 6 "5v" H 6500 3850 60  0001 C CNN "Alimentacion"
-F 7 "Led red 0805" H 6500 3850 60  0001 C CNN "Description"
+F 7 "WP710A10QBC/D" H 6500 3850 60  0001 C CNN "manf#"
 	1    6500 3850
 	0    -1   -1   0   
 $EndComp
@@ -95,7 +95,7 @@ F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 6430 4350 30  0001 C CNN
 F 3 "" H 6500 4350 30  0000 C CNN
 F 4 "+85/-40" H 6500 4350 60  0001 C CNN "Temperatura"
 F 5 "5v" H 6500 4350 60  0001 C CNN "Alimentacion"
-F 6 "Resistor 330ohms" H 6500 4350 60  0001 C CNN "Description"
+F 6 "ESR10EZPF3300" H 6500 4350 60  0001 C CNN "manf#"
 	1    6500 4350
 	1    0    0    -1  
 $EndComp
@@ -121,7 +121,7 @@ F 3 "http://www.farnell.com/datasheets/1923743.pdf" H 8550 3700 60  0001 C CNN
 F 4 "Kemet" H 8550 3700 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 8550 3700 60  0001 C CNN "Temperatura"
 F 6 "6.3v" H 8550 3700 60  0001 C CNN "Alimentacion"
-F 7 "KEMET 	T520T107M006ATE070  CAP, TANT, POLYMER, 100UF, 6.3V, 1411" H 8550 3700 60  0001 C CNN "Description"
+F 7 "EEU-FC0J101" H 8550 3700 60  0001 C CNN "manf#"
 	1    8550 3700
 	1    0    0    -1  
 $EndComp
@@ -342,7 +342,7 @@ F 3 "http://www.farnell.com/datasheets/2009679.pdf" H 5650 4400 60  0001 C CNN
 F 4 "WALSIN" H 5650 4400 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 5650 4400 60  0001 C CNN "Temperatura"
 F 6 "50v" H 5650 4400 60  0001 C CNN "Alimentacion"
-F 7 "WALSIN 	0603F104Z500CT  CAP, MLCC, Y5V, 0.1UF, 50V, 0603, REEL" H 5650 4400 60  0001 C CNN "Description"
+F 7 "K104K15X7RF5TL2" H 5650 4400 60  0001 C CNN "manf#"
 	1    5650 4400
 	1    0    0    -1  
 $EndComp
@@ -398,7 +398,7 @@ F 3 "http://www.farnell.com/datasheets/95980.pdf" H 7800 3200 60  0001 C CNN
 F 4 "Microchip" H 7800 3200 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 7800 3200 60  0001 C CNN "Temperatura"
 F 6 "2.7-5v" H 7800 3200 60  0001 C CNN "Alimentacion"
-F 7 "MICROCHIP 	TC4424CPA  MOSFET Driver Lado Bajo, Alimentación:4.5-18V, Salida Pico:3A, Salida:3.5 Ohm, DIP-" H 7800 3200 60  0001 C CNN "Description"
+F 7 "TC4424CPA" H 7800 3200 60  0001 C CNN "manf#"
 	1    7800 3200
 	1    0    0    -1  
 $EndComp
@@ -428,7 +428,7 @@ F 3 "http://www.farnell.com/datasheets/1923743.pdf" H 5350 4400 60  0001 C CNN
 F 4 "Kemet" H 5350 4400 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 5350 4400 60  0001 C CNN "Temperatura"
 F 6 "6.3v" H 5350 4400 60  0001 C CNN "Alimentacion"
-F 7 "KEMET 	T520T107M006ATE070  CAP, TANT, POLYMER, 100UF, 6.3V, 1411" H 5350 4400 60  0001 C CNN "Description"
+F 7 "EEU-FC0J101" H 5350 4400 60  0001 C CNN "manf#"
 	1    5350 4400
 	1    0    0    -1  
 $EndComp
