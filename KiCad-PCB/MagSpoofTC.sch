@@ -121,7 +121,7 @@ F 3 "http://www.farnell.com/datasheets/1923743.pdf" H 8550 3700 60  0001 C CNN
 F 4 "Kemet" H 8550 3700 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 8550 3700 60  0001 C CNN "Temperatura"
 F 6 "6.3v" H 8550 3700 60  0001 C CNN "Alimentacion"
-F 7 "EEU-FC0J101" H 8550 3700 60  0001 C CNN "manf#"
+F 7 "107KXM010M" H 8550 3700 60  0001 C CNN "manf#"
 	1    8550 3700
 	1    0    0    -1  
 $EndComp
@@ -342,7 +342,7 @@ F 3 "http://www.farnell.com/datasheets/2009679.pdf" H 5650 4400 60  0001 C CNN
 F 4 "WALSIN" H 5650 4400 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 5650 4400 60  0001 C CNN "Temperatura"
 F 6 "50v" H 5650 4400 60  0001 C CNN "Alimentacion"
-F 7 "K104K15X7RF5TL2" H 5650 4400 60  0001 C CNN "manf#"
+F 7 "21RZ310-RC" H 5650 4400 60  0001 C CNN "manf#"
 	1    5650 4400
 	1    0    0    -1  
 $EndComp
