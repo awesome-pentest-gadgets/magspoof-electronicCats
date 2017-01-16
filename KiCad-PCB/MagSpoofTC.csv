@@ -9,4 +9,4 @@ Reference, Value, Footprint, Datasheet, Manufacturer, Temperatura, Alimentacion,
 "P1","Battery","Pin_Headers:Pin_Header_Straight_1x02",""
 "C3","0.1uF","Capacitors_ThroughHole:C_Disc_D3_P2.5","http://www.farnell.com/datasheets/2009679.pdf","WALSIN","+85/-40","50v","K104K15X7RF5TL2"
 "U1","TC4424","Housings_DIP:DIP-8_W7.62mm_LongPads","http://www.farnell.com/datasheets/95980.pdf","Microchip","+85/-40","2.7-5v","TC4424CPA"
-"C2","100uF","theinventorhouse:CP_4x5mm","http://www.farnell.com/datasheets/1923743.pdf","Kemet","+85/-40","6.3v","EEU-FC0J101"
+"C2","100uF","theinventorhouse:CP_4x5mm","http://www.farnell.com/datasheets/1923743.pdf","Kemet","+85/-40","6.3v","107KXM010M"

@@ -428,7 +428,7 @@ F 3 "http://www.farnell.com/datasheets/1923743.pdf" H 5350 4400 60  0001 C CNN
 F 4 "Kemet" H 5350 4400 60  0001 C CNN "Manufacturer"
 F 5 "+85/-40" H 5350 4400 60  0001 C CNN "Temperatura"
 F 6 "6.3v" H 5350 4400 60  0001 C CNN "Alimentacion"
-F 7 "EEU-FC0J101" H 5350 4400 60  0001 C CNN "manf#"
+F 7 "107KXM010M" H 5350 4400 60  0001 C CNN "manf#"
 	1    5350 4400
 	1    0    0    -1  
 $EndComp
